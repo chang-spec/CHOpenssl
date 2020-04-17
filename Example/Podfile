@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CHOpenssl_Example' do
+  pod 'CHOpenssl', :path => '../'
+
+  target 'CHOpenssl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
