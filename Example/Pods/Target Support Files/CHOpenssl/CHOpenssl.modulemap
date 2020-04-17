@@ -1,0 +1,6 @@
+framework module CHOpenssl {
+  umbrella header "CHOpenssl-umbrella.h"
+
+  export *
+  module * { export * }
+}

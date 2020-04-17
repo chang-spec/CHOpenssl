@@ -1,0 +1,6 @@
+framework module Pods_CHOpenssl_Example {
+  umbrella header "Pods-CHOpenssl_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

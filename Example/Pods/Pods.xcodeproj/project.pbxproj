@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29D6D69E7C333BF8ECFA69814FD819F3 /* Pods-CHOpenssl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA6D9F6F0AB71C1DE4CF986BB9CD20F /* Pods-CHOpenssl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C461831EB2134977B6701C1CC5B0251 /* Pods-CHOpenssl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE22AD3FD62BD92163BC3E4CD734ABA /* Pods-CHOpenssl_Example-dummy.m */; };
+		5E71792B99B9B02A9D8F8C0B6D8146F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8A6DB69BB345543D800E498C20DEBE2D /* CHOpenssl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9870ED2FE11DF6DCA93F17C67D965C8B /* CHOpenssl-dummy.m */; };
+		8EA186B5FDABDD9472EE8D10A4EB5BD8 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C6969842B75DAC8CBFBC0DD1AF9023E2 /* ReplaceMe.m */; };
+		99C13805FDF51C80090E824AADCA5660 /* Pods-CHOpenssl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D2D3DFC1C929C3082FD54E009A3A0A /* Pods-CHOpenssl_Tests-dummy.m */; };
+		AC5010FB753F397A0DAD1DF323D6824D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CA5F2B6D4A0AA946336810CDBDA1A473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DC0F5157D71825502F091502DB1424AA /* CHOpenssl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CEE1CDE7000343CABE63044F0C5A53 /* CHOpenssl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E561F61B19E0BD3882763AEFE86BA7ED /* Pods-CHOpenssl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEA4D446CA56D758DC9B9E73D0BE474 /* Pods-CHOpenssl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FA599B631EDE9F57DE70512374CB014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8967E442994DB11FFFF0FAAC772E7CD0;
+			remoteInfo = "Pods-CHOpenssl_Example";
+		};
+		EF49BC5647A7CB7BF23CF5FE5FD72AC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93229FECA2E42E4A1A99ADFDCA55BA32;
+			remoteInfo = CHOpenssl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BC7577CDA596E978E9E5BD43ACAD7A0 /* Pods-CHOpenssl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHOpenssl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D44D71C2CA2D3D70ADB9F6BF698DED3 /* Pods-CHOpenssl_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHOpenssl_Tests-Info.plist"; sourceTree = "<group>"; };
+		1FA6D9F6F0AB71C1DE4CF986BB9CD20F /* Pods-CHOpenssl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CHOpenssl_Example-umbrella.h"; sourceTree = "<group>"; };
+		275D43D007256DFC154494AF339201A1 /* CHOpenssl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHOpenssl-prefix.pch"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		48598B282449962800AF991F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		48598B2A2449962800AF991F /* pem2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		48598B2B2449962800AF991F /* pem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		48598B2C2449962800AF991F /* ssl3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		48598B2D2449962800AF991F /* ossl_typ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		48598B2E2449962800AF991F /* dtls1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		48598B2F2449962800AF991F /* err.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		48598B302449962800AF991F /* bn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		48598B312449962800AF991F /* blowfish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		48598B322449962800AF991F /* cms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		48598B332449962800AF991F /* engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		48598B342449962800AF991F /* conf_api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		48598B352449962800AF991F /* x509.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		48598B362449962800AF991F /* asn1_mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		48598B372449962800AF991F /* ui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		48598B382449962800AF991F /* kssl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		48598B392449962800AF991F /* sha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		48598B3A2449962800AF991F /* symhacks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		48598B3B2449962800AF991F /* asn1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		48598B3C2449962800AF991F /* opensslconf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		48598B3D2449962800AF991F /* bio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		48598B3E2449962800AF991F /* rc2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		48598B3F2449962800AF991F /* dh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		48598B402449962800AF991F /* ui_compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		48598B412449962800AF991F /* x509v3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		48598B422449962800AF991F /* ssl23.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		48598B432449962800AF991F /* conf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		48598B442449962800AF991F /* md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		48598B452449962800AF991F /* x509_vfy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		48598B462449962800AF991F /* txt_db.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		48598B472449962800AF991F /* safestack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		48598B482449962800AF991F /* ecdsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		48598B492449962800AF991F /* objects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		48598B4A2449962800AF991F /* pkcs12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		48598B4B2449962800AF991F /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		48598B4C2449962900AF991F /* opensslv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		48598B4D2449962900AF991F /* pkcs7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		48598B4E2449962900AF991F /* obj_mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		48598B4F2449962900AF991F /* buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		48598B502449962900AF991F /* ssl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		48598B512449962900AF991F /* srp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		48598B522449962900AF991F /* camellia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		48598B532449962900AF991F /* evp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		48598B542449962900AF991F /* e_os2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		48598B552449962900AF991F /* md4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		48598B562449962900AF991F /* hmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		48598B572449962900AF991F /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		48598B582449962900AF991F /* comp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		48598B592449962900AF991F /* cast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		48598B5A2449962900AF991F /* rc4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		48598B5B2449962900AF991F /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		48598B5C2449962900AF991F /* des.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		48598B5D2449962900AF991F /* ocsp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		48598B5E2449962900AF991F /* ec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		48598B5F2449962900AF991F /* ecdh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		48598B602449962900AF991F /* rand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		48598B612449962900AF991F /* ts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		48598B622449962900AF991F /* pqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		48598B632449962900AF991F /* dso.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		48598B642449962900AF991F /* seed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		48598B652449962900AF991F /* modes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		48598B662449962900AF991F /* ssl2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		48598B672449962900AF991F /* rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		48598B682449962900AF991F /* krb5_asn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		48598B692449962900AF991F /* des_old.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		48598B6A2449962900AF991F /* ripemd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		48598B6B2449962900AF991F /* whrlpool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		48598B6C2449962900AF991F /* tls1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		48598B6D2449962900AF991F /* mdc2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		48598B6E2449962900AF991F /* dsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		48598B6F2449962900AF991F /* srtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		48598B702449962900AF991F /* asn1t.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		48598B712449962900AF991F /* cmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		48598B722449962900AF991F /* ebcdic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		48598B732449962900AF991F /* idea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		48598B742449962900AF991F /* lhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		48598B762449962900AF991F /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		48598B772449962900AF991F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		48598B782449967100AF991F /* OpenSSLAesCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenSSLAesCrypto.h; path = CHOpenssl/Classes/OpenSSLAesCrypto.h; sourceTree = "<group>"; };
+		48598B792449967100AF991F /* OpenSSLAesCrypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OpenSSLAesCrypto.m; path = CHOpenssl/Classes/OpenSSLAesCrypto.m; sourceTree = "<group>"; };
+		48598B7A2449967100AF991F /* WZEncryptoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WZEncryptoManager.h; path = CHOpenssl/Classes/WZEncryptoManager.h; sourceTree = "<group>"; };
+		48598B7B2449967100AF991F /* WZEncryptoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WZEncryptoManager.m; path = CHOpenssl/Classes/WZEncryptoManager.m; sourceTree = "<group>"; };
+		4AEA4D446CA56D758DC9B9E73D0BE474 /* Pods-CHOpenssl_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CHOpenssl_Tests-umbrella.h"; sourceTree = "<group>"; };
+		52B4C66D0A132B0A1A3667CC36A294D1 /* Pods-CHOpenssl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHOpenssl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		69D2D3DFC1C929C3082FD54E009A3A0A /* Pods-CHOpenssl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CHOpenssl_Tests-dummy.m"; sourceTree = "<group>"; };
+		6C36EBF490B045A56AFD6E086B00DDC7 /* Pods_CHOpenssl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHOpenssl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5B468DDBDBD432A6759488DC126203 /* CHOpenssl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHOpenssl.xcconfig; sourceTree = "<group>"; };
+		74B89C25BA182083762374111E6624DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7ED7728B8759E0496855FBE1B10F69FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7F4453FD8B4B88728B51DCEBD41057DA /* CHOpenssl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHOpenssl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CEE1CDE7000343CABE63044F0C5A53 /* CHOpenssl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHOpenssl-umbrella.h"; sourceTree = "<group>"; };
+		9870ED2FE11DF6DCA93F17C67D965C8B /* CHOpenssl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHOpenssl-dummy.m"; sourceTree = "<group>"; };
+		9D82617D9752EEAC50A245F9C92A547D /* Pods-CHOpenssl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CHOpenssl_Example.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5D70F51EF462C8B387CCF0A1A489A4F /* CHOpenssl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CHOpenssl.modulemap; sourceTree = "<group>"; };
+		A9BC749A538327EF486506BBC4F30D3C /* CHOpenssl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CHOpenssl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B173698B784AE8D5865B1DE0CDA3A337 /* Pods-CHOpenssl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CHOpenssl_Tests.modulemap"; sourceTree = "<group>"; };
+		B4338AE844A935C706DF251DEBF80C74 /* Pods-CHOpenssl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHOpenssl_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BF543E2299EE7BE656E22584A12AAE34 /* CHOpenssl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CHOpenssl-Info.plist"; sourceTree = "<group>"; };
+		C6969842B75DAC8CBFBC0DD1AF9023E2 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = CHOpenssl/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		C8038C2436496F791787226227D12A1F /* Pods_CHOpenssl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHOpenssl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB40C933D64AAD00A78382C93D02C5B /* Pods-CHOpenssl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHOpenssl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CFE22AD3FD62BD92163BC3E4CD734ABA /* Pods-CHOpenssl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CHOpenssl_Example-dummy.m"; sourceTree = "<group>"; };
+		D1491F97EACEDEA02F94681D794CB0CC /* Pods-CHOpenssl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CHOpenssl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D5508B10E59AF9C372561828185DFB1D /* Pods-CHOpenssl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHOpenssl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDD5CD391B4F206BD13C9B1DE3EA2838 /* Pods-CHOpenssl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CHOpenssl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB7A530579C739B9B846020A100339B1 /* Pods-CHOpenssl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHOpenssl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F7491F887E12E8E45EFA88EE8B684BCD /* Pods-CHOpenssl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CHOpenssl_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FF763BB644D32D3E7F5002D1F4D7CCE7 /* Pods-CHOpenssl_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHOpenssl_Example-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		836F4BE1D51C1F135A32C12448DB6219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5F2B6D4A0AA946336810CDBDA1A473 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C192A1F319F39C99ECFA03423B67619F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5010FB753F397A0DAD1DF323D6824D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9FC689CA1AC60B4C920AE3A72993C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E71792B99B9B02A9D8F8C0B6D8146F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F9B7BF9D9610BB7AD074C62D9C8ADEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5D70F51EF462C8B387CCF0A1A489A4F /* CHOpenssl.modulemap */,
+				6D5B468DDBDBD432A6759488DC126203 /* CHOpenssl.xcconfig */,
+				9870ED2FE11DF6DCA93F17C67D965C8B /* CHOpenssl-dummy.m */,
+				BF543E2299EE7BE656E22584A12AAE34 /* CHOpenssl-Info.plist */,
+				275D43D007256DFC154494AF339201A1 /* CHOpenssl-prefix.pch */,
+				89CEE1CDE7000343CABE63044F0C5A53 /* CHOpenssl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CHOpenssl";
+			sourceTree = "<group>";
+		};
+		278FED0D32E776E580129E2BF45B8444 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA92688FDEFADAF1F4D568CDCC3F533F /* Pods-CHOpenssl_Example */,
+				7526B4C5BAFB700D2F610FE774AC41AF /* Pods-CHOpenssl_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3EBC13C00711D357E7B6EB9FA74C9C81 /* CHOpenssl */ = {
+			isa = PBXGroup;
+			children = (
+				48598B782449967100AF991F /* OpenSSLAesCrypto.h */,
+				48598B792449967100AF991F /* OpenSSLAesCrypto.m */,
+				48598B7A2449967100AF991F /* WZEncryptoManager.h */,
+				48598B7B2449967100AF991F /* WZEncryptoManager.m */,
+				48598B272449962800AF991F /* include */,
+				48598B752449962900AF991F /* lib */,
+				C6969842B75DAC8CBFBC0DD1AF9023E2 /* ReplaceMe.m */,
+				DB610162FEAB2D088E7678BFCDFFA955 /* Pod */,
+				0F9B7BF9D9610BB7AD074C62D9C8ADEE /* Support Files */,
+			);
+			name = CHOpenssl;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		48598B272449962800AF991F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				48598B282449962800AF991F /* LICENSE */,
+				48598B292449962800AF991F /* openssl */,
+			);
+			name = include;
+			path = CHOpenssl/Classes/include;
+			sourceTree = "<group>";
+		};
+		48598B292449962800AF991F /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				48598B2A2449962800AF991F /* pem2.h */,
+				48598B2B2449962800AF991F /* pem.h */,
+				48598B2C2449962800AF991F /* ssl3.h */,
+				48598B2D2449962800AF991F /* ossl_typ.h */,
+				48598B2E2449962800AF991F /* dtls1.h */,
+				48598B2F2449962800AF991F /* err.h */,
+				48598B302449962800AF991F /* bn.h */,
+				48598B312449962800AF991F /* blowfish.h */,
+				48598B322449962800AF991F /* cms.h */,
+				48598B332449962800AF991F /* engine.h */,
+				48598B342449962800AF991F /* conf_api.h */,
+				48598B352449962800AF991F /* x509.h */,
+				48598B362449962800AF991F /* asn1_mac.h */,
+				48598B372449962800AF991F /* ui.h */,
+				48598B382449962800AF991F /* kssl.h */,
+				48598B392449962800AF991F /* sha.h */,
+				48598B3A2449962800AF991F /* symhacks.h */,
+				48598B3B2449962800AF991F /* asn1.h */,
+				48598B3C2449962800AF991F /* opensslconf.h */,
+				48598B3D2449962800AF991F /* bio.h */,
+				48598B3E2449962800AF991F /* rc2.h */,
+				48598B3F2449962800AF991F /* dh.h */,
+				48598B402449962800AF991F /* ui_compat.h */,
+				48598B412449962800AF991F /* x509v3.h */,
+				48598B422449962800AF991F /* ssl23.h */,
+				48598B432449962800AF991F /* conf.h */,
+				48598B442449962800AF991F /* md5.h */,
+				48598B452449962800AF991F /* x509_vfy.h */,
+				48598B462449962800AF991F /* txt_db.h */,
+				48598B472449962800AF991F /* safestack.h */,
+				48598B482449962800AF991F /* ecdsa.h */,
+				48598B492449962800AF991F /* objects.h */,
+				48598B4A2449962800AF991F /* pkcs12.h */,
+				48598B4B2449962800AF991F /* crypto.h */,
+				48598B4C2449962900AF991F /* opensslv.h */,
+				48598B4D2449962900AF991F /* pkcs7.h */,
+				48598B4E2449962900AF991F /* obj_mac.h */,
+				48598B4F2449962900AF991F /* buffer.h */,
+				48598B502449962900AF991F /* ssl.h */,
+				48598B512449962900AF991F /* srp.h */,
+				48598B522449962900AF991F /* camellia.h */,
+				48598B532449962900AF991F /* evp.h */,
+				48598B542449962900AF991F /* e_os2.h */,
+				48598B552449962900AF991F /* md4.h */,
+				48598B562449962900AF991F /* hmac.h */,
+				48598B572449962900AF991F /* aes.h */,
+				48598B582449962900AF991F /* comp.h */,
+				48598B592449962900AF991F /* cast.h */,
+				48598B5A2449962900AF991F /* rc4.h */,
+				48598B5B2449962900AF991F /* stack.h */,
+				48598B5C2449962900AF991F /* des.h */,
+				48598B5D2449962900AF991F /* ocsp.h */,
+				48598B5E2449962900AF991F /* ec.h */,
+				48598B5F2449962900AF991F /* ecdh.h */,
+				48598B602449962900AF991F /* rand.h */,
+				48598B612449962900AF991F /* ts.h */,
+				48598B622449962900AF991F /* pqueue.h */,
+				48598B632449962900AF991F /* dso.h */,
+				48598B642449962900AF991F /* seed.h */,
+				48598B652449962900AF991F /* modes.h */,
+				48598B662449962900AF991F /* ssl2.h */,
+				48598B672449962900AF991F /* rsa.h */,
+				48598B682449962900AF991F /* krb5_asn.h */,
+				48598B692449962900AF991F /* des_old.h */,
+				48598B6A2449962900AF991F /* ripemd.h */,
+				48598B6B2449962900AF991F /* whrlpool.h */,
+				48598B6C2449962900AF991F /* tls1.h */,
+				48598B6D2449962900AF991F /* mdc2.h */,
+				48598B6E2449962900AF991F /* dsa.h */,
+				48598B6F2449962900AF991F /* srtp.h */,
+				48598B702449962900AF991F /* asn1t.h */,
+				48598B712449962900AF991F /* cmac.h */,
+				48598B722449962900AF991F /* ebcdic.h */,
+				48598B732449962900AF991F /* idea.h */,
+				48598B742449962900AF991F /* lhash.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		48598B752449962900AF991F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				48598B762449962900AF991F /* libcrypto.a */,
+				48598B772449962900AF991F /* libssl.a */,
+			);
+			name = lib;
+			path = CHOpenssl/Classes/lib;
+			sourceTree = "<group>";
+		};
+		4DE7CF0B4A29905997D445CE814EA877 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F4453FD8B4B88728B51DCEBD41057DA /* CHOpenssl.framework */,
+				C8038C2436496F791787226227D12A1F /* Pods_CHOpenssl_Example.framework */,
+				6C36EBF490B045A56AFD6E086B00DDC7 /* Pods_CHOpenssl_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7526B4C5BAFB700D2F610FE774AC41AF /* Pods-CHOpenssl_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B173698B784AE8D5865B1DE0CDA3A337 /* Pods-CHOpenssl_Tests.modulemap */,
+				DDD5CD391B4F206BD13C9B1DE3EA2838 /* Pods-CHOpenssl_Tests-acknowledgements.markdown */,
+				CDB40C933D64AAD00A78382C93D02C5B /* Pods-CHOpenssl_Tests-acknowledgements.plist */,
+				69D2D3DFC1C929C3082FD54E009A3A0A /* Pods-CHOpenssl_Tests-dummy.m */,
+				1D44D71C2CA2D3D70ADB9F6BF698DED3 /* Pods-CHOpenssl_Tests-Info.plist */,
+				4AEA4D446CA56D758DC9B9E73D0BE474 /* Pods-CHOpenssl_Tests-umbrella.h */,
+				D5508B10E59AF9C372561828185DFB1D /* Pods-CHOpenssl_Tests.debug.xcconfig */,
+				EB7A530579C739B9B846020A100339B1 /* Pods-CHOpenssl_Tests.release.xcconfig */,
+			);
+			name = "Pods-CHOpenssl_Tests";
+			path = "Target Support Files/Pods-CHOpenssl_Tests";
+			sourceTree = "<group>";
+		};
+		BA92688FDEFADAF1F4D568CDCC3F533F /* Pods-CHOpenssl_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9D82617D9752EEAC50A245F9C92A547D /* Pods-CHOpenssl_Example.modulemap */,
+				D1491F97EACEDEA02F94681D794CB0CC /* Pods-CHOpenssl_Example-acknowledgements.markdown */,
+				1BC7577CDA596E978E9E5BD43ACAD7A0 /* Pods-CHOpenssl_Example-acknowledgements.plist */,
+				CFE22AD3FD62BD92163BC3E4CD734ABA /* Pods-CHOpenssl_Example-dummy.m */,
+				F7491F887E12E8E45EFA88EE8B684BCD /* Pods-CHOpenssl_Example-frameworks.sh */,
+				FF763BB644D32D3E7F5002D1F4D7CCE7 /* Pods-CHOpenssl_Example-Info.plist */,
+				1FA6D9F6F0AB71C1DE4CF986BB9CD20F /* Pods-CHOpenssl_Example-umbrella.h */,
+				B4338AE844A935C706DF251DEBF80C74 /* Pods-CHOpenssl_Example.debug.xcconfig */,
+				52B4C66D0A132B0A1A3667CC36A294D1 /* Pods-CHOpenssl_Example.release.xcconfig */,
+			);
+			name = "Pods-CHOpenssl_Example";
+			path = "Target Support Files/Pods-CHOpenssl_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F2B6AD548B91B157B95F7B82BEDA23A9 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4DE7CF0B4A29905997D445CE814EA877 /* Products */,
+				278FED0D32E776E580129E2BF45B8444 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB610162FEAB2D088E7678BFCDFFA955 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A9BC749A538327EF486506BBC4F30D3C /* CHOpenssl.podspec */,
+				74B89C25BA182083762374111E6624DB /* LICENSE */,
+				7ED7728B8759E0496855FBE1B10F69FD /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F2B6AD548B91B157B95F7B82BEDA23A9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC13C00711D357E7B6EB9FA74C9C81 /* CHOpenssl */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36CF9414DCF1BB024D5AF6E532462FD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0F5157D71825502F091502DB1424AA /* CHOpenssl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE87ED15BC4D34CF8DBCBD1FC6FEC91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D6D69E7C333BF8ECFA69814FD819F3 /* Pods-CHOpenssl_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0B89C22F042E70952FF8830E3580B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E561F61B19E0BD3882763AEFE86BA7ED /* Pods-CHOpenssl_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8967E442994DB11FFFF0FAAC772E7CD0 /* Pods-CHOpenssl_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16CDA6B38E19E4CDF396AA08F407F59 /* Build configuration list for PBXNativeTarget "Pods-CHOpenssl_Example" */;
+			buildPhases = (
+				9FE87ED15BC4D34CF8DBCBD1FC6FEC91 /* Headers */,
+				93AFBAC3E07D8ECA63B4E0745BECF78A /* Sources */,
+				C192A1F319F39C99ECFA03423B67619F /* Frameworks */,
+				73DDC7B53535C510C3810395C08DC78C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EEC67EE4634F3252B2A6757590B1BA0 /* PBXTargetDependency */,
+			);
+			name = "Pods-CHOpenssl_Example";
+			productName = "Pods-CHOpenssl_Example";
+			productReference = C8038C2436496F791787226227D12A1F /* Pods_CHOpenssl_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9077BD32F0D15B5A240660E1CF4955C0 /* Pods-CHOpenssl_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74170325ECBF7B659A3C4C611942C9B2 /* Build configuration list for PBXNativeTarget "Pods-CHOpenssl_Tests" */;
+			buildPhases = (
+				CB0B89C22F042E70952FF8830E3580B1 /* Headers */,
+				4913D7FDB2CCEA929BB99240E51E977A /* Sources */,
+				836F4BE1D51C1F135A32C12448DB6219 /* Frameworks */,
+				149BEC0A90EB9549BB49664A28E910DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA8979686FB9751E4E5D3AA04E5FF982 /* PBXTargetDependency */,
+			);
+			name = "Pods-CHOpenssl_Tests";
+			productName = "Pods-CHOpenssl_Tests";
+			productReference = 6C36EBF490B045A56AFD6E086B00DDC7 /* Pods_CHOpenssl_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93229FECA2E42E4A1A99ADFDCA55BA32 /* CHOpenssl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0388D7D0B43A51E5915F8922D559E95 /* Build configuration list for PBXNativeTarget "CHOpenssl" */;
+			buildPhases = (
+				36CF9414DCF1BB024D5AF6E532462FD4 /* Headers */,
+				B5DE4B7EC85806925BCAABDB49EE32F9 /* Sources */,
+				DE9FC689CA1AC60B4C920AE3A72993C3 /* Frameworks */,
+				9E8EE95E103721CF532751D588AD4647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHOpenssl;
+			productName = CHOpenssl;
+			productReference = 7F4453FD8B4B88728B51DCEBD41057DA /* CHOpenssl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4DE7CF0B4A29905997D445CE814EA877 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93229FECA2E42E4A1A99ADFDCA55BA32 /* CHOpenssl */,
+				8967E442994DB11FFFF0FAAC772E7CD0 /* Pods-CHOpenssl_Example */,
+				9077BD32F0D15B5A240660E1CF4955C0 /* Pods-CHOpenssl_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		149BEC0A90EB9549BB49664A28E910DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DDC7B53535C510C3810395C08DC78C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8EE95E103721CF532751D588AD4647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4913D7FDB2CCEA929BB99240E51E977A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C13805FDF51C80090E824AADCA5660 /* Pods-CHOpenssl_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AFBAC3E07D8ECA63B4E0745BECF78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C461831EB2134977B6701C1CC5B0251 /* Pods-CHOpenssl_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DE4B7EC85806925BCAABDB49EE32F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A6DB69BB345543D800E498C20DEBE2D /* CHOpenssl-dummy.m in Sources */,
+				8EA186B5FDABDD9472EE8D10A4EB5BD8 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EEC67EE4634F3252B2A6757590B1BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CHOpenssl;
+			target = 93229FECA2E42E4A1A99ADFDCA55BA32 /* CHOpenssl */;
+			targetProxy = EF49BC5647A7CB7BF23CF5FE5FD72AC4 /* PBXContainerItemProxy */;
+		};
+		BA8979686FB9751E4E5D3AA04E5FF982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CHOpenssl_Example";
+			target = 8967E442994DB11FFFF0FAAC772E7CD0 /* Pods-CHOpenssl_Example */;
+			targetProxy = 5FA599B631EDE9F57DE70512374CB014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29B65A3893F98F873C047743E689051F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5508B10E59AF9C372561828185DFB1D /* Pods-CHOpenssl_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CHOpenssl_Tests/Pods-CHOpenssl_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CHOpenssl_Tests/Pods-CHOpenssl_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		323DAE02FA8267832949703DF675CD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7A530579C739B9B846020A100339B1 /* Pods-CHOpenssl_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CHOpenssl_Tests/Pods-CHOpenssl_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CHOpenssl_Tests/Pods-CHOpenssl_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		68E2562646297F64FB78947FBDB6078B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4338AE844A935C706DF251DEBF80C74 /* Pods-CHOpenssl_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CHOpenssl_Example/Pods-CHOpenssl_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CHOpenssl_Example/Pods-CHOpenssl_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9380B16604C7DC1A19F61FCDF9FA5977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5B468DDBDBD432A6759488DC126203 /* CHOpenssl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CHOpenssl/CHOpenssl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHOpenssl/CHOpenssl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CHOpenssl/CHOpenssl.modulemap";
+				PRODUCT_MODULE_NAME = CHOpenssl;
+				PRODUCT_NAME = CHOpenssl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB4353BEC9DC6EBA3E5B8192C7EFDDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B4C66D0A132B0A1A3667CC36A294D1 /* Pods-CHOpenssl_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CHOpenssl_Example/Pods-CHOpenssl_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CHOpenssl_Example/Pods-CHOpenssl_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8E840D1997E413F30D907044F4F4B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5B468DDBDBD432A6759488DC126203 /* CHOpenssl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CHOpenssl/CHOpenssl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHOpenssl/CHOpenssl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CHOpenssl/CHOpenssl.modulemap";
+				PRODUCT_MODULE_NAME = CHOpenssl;
+				PRODUCT_NAME = CHOpenssl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74170325ECBF7B659A3C4C611942C9B2 /* Build configuration list for PBXNativeTarget "Pods-CHOpenssl_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29B65A3893F98F873C047743E689051F /* Debug */,
+				323DAE02FA8267832949703DF675CD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16CDA6B38E19E4CDF396AA08F407F59 /* Build configuration list for PBXNativeTarget "Pods-CHOpenssl_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E2562646297F64FB78947FBDB6078B /* Debug */,
+				AB4353BEC9DC6EBA3E5B8192C7EFDDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0388D7D0B43A51E5915F8922D559E95 /* Build configuration list for PBXNativeTarget "CHOpenssl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E840D1997E413F30D907044F4F4B97 /* Debug */,
+				9380B16604C7DC1A19F61FCDF9FA5977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

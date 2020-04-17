@@ -1,0 +1,22 @@
+{
+  "name": "CHOpenssl",
+  "version": "0.1.0",
+  "summary": "A short description of CHOpenssl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/platform@hualaikeji.com/CHOpenssl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "platform@hualaikeji.com": "changweixing@hualaikeji.com"
+  },
+  "source": {
+    "git": "https://github.com/platform@hualaikeji.com/CHOpenssl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CHOpenssl/Classes/**/*"
+}

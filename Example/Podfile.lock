@@ -1,0 +1,16 @@
+PODS:
+  - CHOpenssl (0.1.0)
+
+DEPENDENCIES:
+  - CHOpenssl (from `../`)
+
+EXTERNAL SOURCES:
+  CHOpenssl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CHOpenssl: 4d90d3e984e3786caf964d010e0d4b53b4b5fa17
+
+PODFILE CHECKSUM: a53c8857af10118b7f2872ffa26a484c26270671
+
+COCOAPODS: 1.7.0
